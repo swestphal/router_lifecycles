@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Card from '../hoc/card';
 
 const Profile = (props) => {
     // const redir=() => {
@@ -15,11 +16,11 @@ const Profile = (props) => {
     console.log(props);
     return (
        
-        <div>
+        <Card>
             <Link to={{
                 pathname:`${props.match.url}/posts`}}>Take me to /profile/</Link>
-            {redir()}
-        </div>
+           
+        </Card>
        
     )
 }
